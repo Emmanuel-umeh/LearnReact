@@ -4,7 +4,11 @@ import React, {Component} from 'react';
 export default class Body extends Component{
     render(){
         return(
+
+          <div>
+          
             <div className="container">
+
   <div className="row">
     {/* Team Member 1 */}
     <div className="col-xl-3 col-md-6 mb-4">
@@ -47,6 +51,7 @@ export default class Body extends Component{
       </div>
     </div>
   </div>
+</div>
 </div>
 
         )

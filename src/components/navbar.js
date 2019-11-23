@@ -1,17 +1,22 @@
 import React,{Component} from 'react'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
-import Body from './body.js'
-import LogoDesign from './logo.js'
-import ReactDOM from 'react-dom'
+import Home from './Home.js'
 import Footer from './footer.js'
 import AboutPage from './aboutPage.js'
-import Finally from '../index.js'
+import Body from './body.js'
+import LogoDesign from './logo.js'
+import ContactUs from './contactUs.js'
+
 
 
   export default class NavigationBar extends Component{
 
     render(){
   return(<Router>
+
+   
+
+
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 <div className="container">
 <a className="navbar-brand" href="#">
@@ -38,12 +43,18 @@ import Finally from '../index.js'
 </ul>
 </div>
 </div>
+
+<div>
+</div>
+
+        
 </nav>
+
 
 <Switch>
 <Route exact path="/" component={Body} />
 <Route path="/aboutPage" component={AboutPage} />
-<Route path="/contact" component={Footer} />
+<Route path="/contact" component={ContactUs} />
 
 </Switch>
 </Router>)
